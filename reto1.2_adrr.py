@@ -1,3 +1,7 @@
+## MANEJO DE CONTENIDO DE ARCHIVO CON SCRIPT
+
+### Usando librerías y comandería en PYTHON
+
 import os
 import shutil
 

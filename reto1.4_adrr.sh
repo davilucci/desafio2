@@ -1,12 +1,15 @@
-#!/bin/bash
 
-#descargando contenido de la pagina.
+
+#!/bin/bash
+## MANEJO DE CURL CON BASH
+
+### Usando librerías y comandería en PYTHON
+
+#### Descargando contenido de la pagina.
 
 echo "descarga"
 
 wget https://es.wikipedia.org/wiki/DevOps
-
-
 
 #buscar palabra
 
