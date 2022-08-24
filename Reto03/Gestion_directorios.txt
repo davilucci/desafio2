@@ -1,0 +1,46 @@
+adrr@devops ~> cd nueva_carpeta/
+adrr@devops ~/nueva_carpeta>
+adrr@devops ~/nueva_carpeta> touch archivo_nuevo.txt
+adrr@devops ~/nueva_carpeta>
+adrr@devops ~/nueva_carpeta> mv archivo_nuevo.txt archivo_viejo.txt
+adrr@devops ~/nueva_carpeta> ls
+archivo_viejo.txt
+adrr@devops ~/nueva_carpeta> ll
+total 0
+-rw-rw-r-- 1 adrr adrr 0 ago 23 21:21 archivo_viejo.txt
+adrr@devops ~/nueva_carpeta> nano archivo_viejo.txt
+adrr@devops ~/nueva_carpeta> cat archivo_viejo.txt 
+Nueva linea de texto
+adrr@devops ~/nueva_carpeta>
+adrr@devops ~/nueva_carpeta> chmod u+rwx archivo_viejo.txt 
+adrr@devops ~/nueva_carpeta> ll
+total 4,0K
+-rwxrw-r-- 1 adrr adrr 21 ago 23 21:22 archivo_viejo.txt
+adrr@devops ~/nueva_carpeta> cd ..
+adrr@devops ~> pwd
+/home/adrr
+adrr@devops ~> cd nueva_carpeta/
+adrr@devops ~/nueva_carpeta> pwd
+/home/adrr/nueva_carpeta
+adrr@devops ~/nueva_carpeta> cd ..
+04l[?2004hadrr@
+adrr@devops ~> ln -s /home/adrr/nueva_carpeta/archivo_viejo.txt enlace.ln
+adrr@devops ~> ls
+Desktop  Documents  Downloads  enlace.ln  Music  nueva_carpeta  Pictures  Public  snap  Templates  Videos
+adrr@devops ~> cat enlace.ln 
+Nueva linea de texto
+adrr@devops ~>
+adrr@devops ~> rmdir -r nueva_carpeta/
+rmdir: invalid option -- 'r'
+Try 'rmdir --help' for more information.
+adrr@devops ~ [1]> rmdir --r nueva_carpeta/
+rmdir: unrecognized option '--r'
+Try 'rmdir --help' for more information.
+adrr@devops ~ [1]> rmdir nueva_carpeta/
+rmdir: failed to remove 'nueva_carpeta/': Directory not empty
+adrr@devops ~ [1]> rm -r nueva_carpeta/
+adrr@devops ~> ls
+Desktop  Documents  Downloads  enlace.ln  Music  Pictures  Public  snap  Templates  Videos
+adrr@devops ~> cat enlace.ln 
+cat: enlace.ln: No such file or directory
+adrr@devops ~ [1]>
